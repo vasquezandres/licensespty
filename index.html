@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LicensesPTY – Microsoft 365 y equipos tecnológicos</title>
+  <meta name="description" content="Implementación de Microsoft 365 Empresa Estándar, licencias originales y equipos tecnológicos en Panamá." />
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root{
+      --bg:#ffffff; 
+      --fg:#1a1a1a; 
+      --muted:#555; 
+      --brand:#2563eb; 
+      --brand-2:#004aad; 
+      --card:#f8f9fb; 
+      --shadow:0 4px 20px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:"Segoe UI",Roboto,Inter,Arial,sans-serif;
+      line-height:1.6;
+    }
+    .wrap{max-width:1100px;margin:auto;padding:22px}
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:8px 0 20px;
+      border-bottom:2px solid var(--brand);
+    }
+    .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg)}
+    .logo img{height:55px}
+    .hero{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:32px;
+      align-items:center;
+      padding:40px 0;
+    }
+    h1{font-size:clamp(28px,4vw,42px);margin:0 0 10px;color:var(--brand-2)}
+    h2{font-size:clamp(22px,3vw,28px);margin:0 0 12px;color:var(--brand)}
+    p.lead{font-size:17px;color:var(--muted);margin:0 0 18px}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      color:white;
+      background:linear-gradient(135deg,var(--brand),var(--brand-2));
+      padding:12px 18px;
+      border-radius:8px;
+      font-weight:600;
+      box-shadow:var(--shadow);
+      transition:.2s;
+    }
+    .btn:hover{opacity:.9}
+    .btn.ghost{
+      background:transparent;
+      border:2px solid var(--brand);
+      color:var(--brand);
+      box-shadow:none;
+    }
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:20px;
+      box-shadow:var(--shadow);
+    }
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .list{margin:10px 0 0;padding:0 0 0 20px}
+    .pill{
+      display:inline-block;
+      background:rgba(37,99,235,.1);
+      border:1px solid rgba(37,99,235,.3);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color:var(--brand-2);
+      margin:6px 6px 0 0;
+    }
+    footer{
+      color:var(--muted);
+      padding:26px 0;
+      border-top:1px solid #ddd;
+      margin-top:30px;
+      text-align:center;
+      font-size:14px;
+    }
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .logo img{height:45px}
+    }
+  </style>
+</head>
+<link rel="icon" type="image/png" href="logo-licensespty.png">
+
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="#">
+        <img src="logo-licensespty.png" alt="LicensesPTY Logo">
+        <strong>LicensesPTY</strong>
+      </a>
+      <a class="btn ghost" href="#contacto">Contacto</a>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Implementación profesional de Microsoft 365</h1>
+        <p class="lead">Brindamos soluciones empresariales con <strong>Microsoft 365 Empresa Estándar</strong> y suministro de <strong>equipos tecnológicos</strong> listos para trabajar. Nos encargamos de toda la configuración técnica, seguridad y respaldo de tu información.</p>
+        <div class="btns">
+          <a class="btn" href="https://wa.me/50764717883?text=Hola%20LicensesPTY,%20quiero%20cotizar%20Microsoft%20365." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          <a class="btn ghost" href="#servicios">Ver servicios</a>
+        </div>
+        <div style="margin-top:14px">
+          <span class="pill">Microsoft 365</span>
+          <span class="pill">Exchange Online</span>
+          <span class="pill">OneDrive</span>
+          <span class="pill">SharePoint</span>
+          <span class="pill">Equipos tecnológicos</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Servicios incluidos</h2>
+        <ul class="list">
+          <li>Configuración del dominio y registros DNS (MX, SPF, DKIM, DMARC).</li>
+          <li>Creación de usuarios, asignación de licencias y autenticación MFA.</li>
+          <li>Activación y migración de correo a Exchange Online.</li>
+          <li>Respaldo y colaboración en OneDrive y SharePoint.</li>
+          <li>Capacitación básica y soporte post implementación.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="servicios" class="grid">
+      <article class="card">
+        <h3>Microsoft 365</h3>
+        <p>Implementación completa y personalizada para tu empresa, con correo, almacenamiento y herramientas de colaboración.</p>
+      </article>
+      <article class="card">
+        <h3>Correo & DNS</h3>
+        <p>Configuramos tu dominio y migramos tus buzones de forma segura a Microsoft Exchange Online.</p>
+      </article>
+      <article class="card">
+        <h3>Equipos tecnológicos</h3>
+        <p>Proveemos laptops, PCs, routers y accesorios listos para integrarse a tu entorno Microsoft 365.</p>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h2>Beneficios de Microsoft 365 Empresa Estándar</h2>
+      <ul class="list">
+        <li>Correo corporativo con dominio propio y 50 GB por usuario.</li>
+        <li>1 TB de almacenamiento personal en OneDrive.</li>
+        <li>Aplicaciones Office completas (Word, Excel, PowerPoint, Outlook, etc.).</li>
+        <li>Colaboración en tiempo real mediante Teams y SharePoint.</li>
+        <li>Seguridad avanzada y cumplimiento normativo empresarial.</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="card" style="margin-top:20px">
+      <h2>Contacto</h2>
+      <p class="lead">Contáctanos para cotizar licencias o equipos tecnológicos.</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/50764717883" target="_blank">+507 6471-7883</a><br>
+         <strong>Correo:</strong> <a href="mailto:contacto@licensespty.com">contacto@licensespty.com</a></p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> LicensesPTY — Soluciones en software y tecnología.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
