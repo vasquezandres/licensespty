@@ -1,179 +1,422 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LicensesPTY – Microsoft 365 y equipos tecnológicos</title>
-  <meta name="description" content="Implementación de Microsoft 365 Empresa Estándar, licencias originales y equipos tecnológicos en Panamá." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LicensesPTY | Licencias de software y equipos informáticos en Panamá</title>
+  <meta name="description" content="LicensesPTY es la unidad de SOLUTECH PANAMA especializada en licencias digitales ESD de Kaspersky, McAfee, ESET, Microsoft 365, Windows, Sage 50 y equipos informáticos para Panamá." />
   <meta name="robots" content="index,follow" />
-  <style>
-    :root{
-      --bg:#ffffff; 
-      --fg:#1a1a1a; 
-      --muted:#555; 
-      --brand:#2563eb; 
-      --brand-2:#004aad; 
-      --card:#f8f9fb; 
-      --shadow:0 4px 20px rgba(0,0,0,.08);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--fg);
-      font-family:"Segoe UI",Roboto,Inter,Arial,sans-serif;
-      line-height:1.6;
-    }
-    .wrap{max-width:1100px;margin:auto;padding:22px}
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding:8px 0 20px;
-      border-bottom:2px solid var(--brand);
-    }
-    .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg)}
-    .logo img{height:55px}
-    .hero{
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:32px;
-      align-items:center;
-      padding:40px 0;
-    }
-    h1{font-size:clamp(28px,4vw,42px);margin:0 0 10px;color:var(--brand-2)}
-    h2{font-size:clamp(22px,3vw,28px);margin:0 0 12px;color:var(--brand)}
-    p.lead{font-size:17px;color:var(--muted);margin:0 0 18px}
-    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .btn{
-      display:inline-block;
-      text-decoration:none;
-      color:white;
-      background:linear-gradient(135deg,var(--brand),var(--brand-2));
-      padding:12px 18px;
-      border-radius:8px;
-      font-weight:600;
-      box-shadow:var(--shadow);
-      transition:.2s;
-    }
-    .btn:hover{opacity:.9}
-    .btn.ghost{
-      background:transparent;
-      border:2px solid var(--brand);
-      color:var(--brand);
-      box-shadow:none;
-    }
-    .card{
-      background:var(--card);
-      border-radius:12px;
-      padding:20px;
-      box-shadow:var(--shadow);
-    }
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .list{margin:10px 0 0;padding:0 0 0 20px}
-    .pill{
-      display:inline-block;
-      background:rgba(37,99,235,.1);
-      border:1px solid rgba(37,99,235,.3);
-      padding:6px 10px;
-      border-radius:999px;
-      font-size:12px;
-      color:var(--brand-2);
-      margin:6px 6px 0 0;
-    }
-    footer{
-      color:var(--muted);
-      padding:26px 0;
-      border-top:1px solid #ddd;
-      margin-top:30px;
-      text-align:center;
-      font-size:14px;
-    }
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr}
-      .logo img{height:45px}
-    }
-  </style>
+  <link rel="canonical" href="https://licensespty.com/" />
+  <link rel="alternate" href="https://licensespty.com/" hreflang="es-PA" />
+  <link rel="alternate" href="https://licensespty.com/" hreflang="en" />
+
+  <meta property="og:title" content="LicensesPTY | Licencias de software y equipos informáticos en Panamá" />
+  <meta property="og:description" content="LicensesPTY es la unidad de SOLUTECH PANAMA especializada en licencias digitales ESD de Kaspersky, McAfee, ESET, Microsoft 365, Windows, Sage 50 y equipos informáticos para Panamá." />
+  <meta property="og:url" content="https://licensespty.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_PA" />
+  <meta property="og:image" content="https://cdn.solutechcloud.com/logos/logo-licensespty.webp" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPPLDQTBWD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WPPLDQTBWD');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LicensesPTY",
+    "url": "https://licensespty.com/",
+    "logo": "https://cdn.solutechcloud.com/logos/logo-licensespty.webp",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "SOLUTECH PANAMA"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "PH Central Park",
+      "addressLocality": "Ciudad de Panamá",
+      "addressCountry": "PA"
+    },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+507-6888-6778",
+      "contactType": "customer service",
+      "areaServed": "PA"
+    }]
+  }
+  </script>
 </head>
-<link rel="icon" type="image/png" href="logo-licensespty.png">
-
-<body>
-  <div class="wrap">
-    <header>
-      <a class="logo" href="#">
-        <img src="logo-licensespty.png" alt="LicensesPTY Logo">
-        <strong>LicensesPTY</strong>
+  <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html#inicio" class="logo">
+        <img src="https://cdn.solutechcloud.com/logos/logo-licensespty.webp" alt="LicensesPTY logo" />
+        <span class="logo-text">LicensesPTY</span>
       </a>
-      <a class="btn ghost" href="#contacto">Contacto</a>
-    </header>
-
-    <section class="hero">
-      <div>
-        <h1>Implementación profesional de Microsoft 365</h1>
-        <p class="lead">Brindamos soluciones empresariales con <strong>Microsoft 365 Empresa Estándar</strong> y suministro de <strong>equipos tecnológicos</strong> listos para trabajar. Nos encargamos de toda la configuración técnica, seguridad y respaldo de tu información.</p>
-        <div class="btns">
-          <a class="btn" href="https://wa.me/50764717883?text=Hola%20LicensesPTY,%20quiero%20cotizar%20Microsoft%20365." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
-          <a class="btn ghost" href="#servicios">Ver servicios</a>
-        </div>
-        <div style="margin-top:14px">
-          <span class="pill">Microsoft 365</span>
-          <span class="pill">Exchange Online</span>
-          <span class="pill">OneDrive</span>
-          <span class="pill">SharePoint</span>
-          <span class="pill">Equipos tecnológicos</span>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Servicios incluidos</h2>
-        <ul class="list">
-          <li>Configuración del dominio y registros DNS (MX, SPF, DKIM, DMARC).</li>
-          <li>Creación de usuarios, asignación de licencias y autenticación MFA.</li>
-          <li>Activación y migración de correo a Exchange Online.</li>
-          <li>Respaldo y colaboración en OneDrive y SharePoint.</li>
-          <li>Capacitación básica y soporte post implementación.</li>
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="index.html#inicio" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="index.html#licencias" data-i18n="nav.licenses">Licencias</a></li>
+          <li><a href="index.html#catalogo" data-i18n="nav.catalog">Catálogo</a></li>
+          <li><a href="index.html#equipos" data-i18n="nav.equipment">Equipos</a></li>
+          <li><a href="index.html#faq" data-i18n="nav.faq">Preguntas frecuentes</a></li>
+          <li><a href="index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
         </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langLabel">ES</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-kicker" data-i18n="hero.kicker">Licencias digitales y hardware corporativo en Panamá</p>
+          <h1 data-i18n="hero.title">
+            Licencias de software originales y equipos informáticos en Panamá
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            LicensesPTY es la unidad de SOLUTECH PANAMA especializada en licencias digitales ESD y soluciones para empresas y usuarios finales. Entregamos licencias originales con soporte local y facturación en Panamá.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn primary" data-i18n="hero.ctaPrimary">
+              Ver licencias disponibles
+            </a>
+            <a href="https://wa.me/50768886778" target="_blank" rel="noopener" class="btn ghost">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-i18n="hero.ctaSecondary">Cotizar por WhatsApp</span>
+            </a>
+          </div>
+          <div class="hero-badges">
+            <span><i class="fa-solid fa-shield-check"></i> <span data-i18n="hero.badge1">Licencias ESD originales</span></span>
+            <span><i class="fa-solid fa-file-invoice"></i> <span data-i18n="hero.badge2">Facturación local en Panamá</span></span>
+            <span><i class="fa-solid fa-headset"></i> <span data-i18n="hero.badge3">Soporte técnico especializado</span></span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <h2 data-i18n="trust.title">Transparencia y seguridad primero</h2>
+            <p data-i18n="trust.text">
+              Este sitio es una landing informativa de LicensesPTY. No solicitamos contraseñas, códigos de verificación ni datos bancarios desde esta página. Todas las compras y pagos se gestionan a través de los canales oficiales de SOLUTECH PANAMA y proveedores autorizados.
+            </p>
+            <ul class="trust-list">
+              <li data-i18n="trust.point1">Licencias ESD originales y verificables.</li>
+              <li data-i18n="trust.point2">Facturación en Panamá para personas y empresas.</li>
+              <li data-i18n="trust.point3">Soporte técnico en español.</li>
+              <li data-i18n="trust.point4">Sin cobros automáticos ni formularios sospechosos.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="servicios" class="grid">
-      <article class="card">
-        <h3>Microsoft 365</h3>
-        <p>Implementación completa y personalizada para tu empresa, con correo, almacenamiento y herramientas de colaboración.</p>
-      </article>
-      <article class="card">
-        <h3>Correo & DNS</h3>
-        <p>Configuramos tu dominio y migramos tus buzones de forma segura a Microsoft Exchange Online.</p>
-      </article>
-      <article class="card">
-        <h3>Equipos tecnológicos</h3>
-        <p>Proveemos laptops, PCs, routers y accesorios listos para integrarse a tu entorno Microsoft 365.</p>
-      </article>
+    <section class="brand-strip">
+      <div class="container brand-strip-inner">
+        <span class="brand-strip-label" data-i18n="brands.label">Marcas que distribuimos:</span>
+        <div class="brand-strip-logos">
+          <img src="https://cdn.solutechcloud.com/logos/logo-kaspersky.webp" alt="Kaspersky" loading="lazy" />
+          <img src="https://cdn.solutechcloud.com/logos/logo-mcafee.webp" alt="McAfee" loading="lazy" />
+          <img src="https://cdn.solutechcloud.com/logos/logo-eset.webp" alt="ESET" loading="lazy" />
+          <img src="https://cdn.solutechcloud.com/logos/logo-m365.webp" alt="Microsoft 365" loading="lazy" />
+          <img src="https://cdn.solutechcloud.com/logos/logo-windows.webp" alt="Windows" loading="lazy" />
+          <img src="https://cdn.solutechcloud.com/logos/logo-sage50.webp" alt="Sage 50" loading="lazy" />
+        </div>
+      </div>
     </section>
 
-    <section class="card" style="margin-top:18px">
-      <h2>Beneficios de Microsoft 365 Empresa Estándar</h2>
-      <ul class="list">
-        <li>Correo corporativo con dominio propio y 50 GB por usuario.</li>
-        <li>1 TB de almacenamiento personal en OneDrive.</li>
-        <li>Aplicaciones Office completas (Word, Excel, PowerPoint, Outlook, etc.).</li>
-        <li>Colaboración en tiempo real mediante Teams y SharePoint.</li>
-        <li>Seguridad avanzada y cumplimiento normativo empresarial.</li>
-      </ul>
+    <section id="licencias" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 data-i18n="licenses.title">Licencias que ofrecemos</h2>
+          <p data-i18n="licenses.subtitle">
+            Trabajamos con las principales marcas de software para cubrir necesidades de hogar, oficinas pequeñas y empresas. La mayoría de nuestras licencias son ESD (entrega digital), adquiridas en distribuidores autorizados.
+          </p>
+        </header>
+        <div class="license-grid">
+          <article class="license-card">
+            <div class="license-icon kaspersky"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3>Kaspersky</h3>
+            <p data-i18n="licenses.kaspersky">
+              Soluciones antivirus y de seguridad de endpoints para usuarios domésticos y empresas.
+            </p>
+            <a href="kaspersky.html" class="license-link" data-i18n="licenses.viewBrand">Ver productos Kaspersky</a>
+          </article>
+          <article class="license-card">
+            <div class="license-icon mcafee"><i class="fa-solid fa-user-shield"></i></div>
+            <h3>McAfee</h3>
+            <p data-i18n="licenses.mcafee">
+              Protección para múltiples dispositivos, identidad y navegación segura.
+            </p>
+            <a href="mcafee.html" class="license-link" data-i18n="licenses.viewBrand">Ver productos McAfee</a>
+          </article>
+          <article class="license-card">
+            <div class="license-icon eset"><i class="fa-solid fa-laptop-shield"></i></div>
+            <h3>ESET</h3>
+            <p data-i18n="licenses.eset">
+              Seguridad ligera para estaciones de trabajo, servidores y dispositivos móviles.
+            </p>
+            <a href="eset.html" class="license-link" data-i18n="licenses.viewBrand">Ver productos ESET</a>
+          </article>
+          <article class="license-card">
+            <div class="license-icon m365"><i class="fa-brands fa-microsoft"></i></div>
+            <h3>Microsoft 365</h3>
+            <p data-i18n="licenses.m365">
+              Suscripciones Microsoft 365 para hogar y empresas con correo, Office y almacenamiento en la nube.
+            </p>
+            <a href="microsoft365.html" class="license-link" data-i18n="licenses.viewBrand">Ver productos Microsoft 365</a>
+          </article>
+          <article class="license-card">
+            <div class="license-icon windows"><i class="fa-brands fa-windows"></i></div>
+            <h3>Windows</h3>
+            <p data-i18n="licenses.windows">
+              Licencias originales de Windows para equipos nuevos o en regularización.
+            </p>
+            <a href="windows.html" class="license-link" data-i18n="licenses.viewBrand">Ver productos Windows</a>
+          </article>
+          <article class="license-card">
+            <div class="license-icon sage"><i class="fa-solid fa-calculator"></i></div>
+            <h3>Sage 50</h3>
+            <p data-i18n="licenses.sage">
+              Software contable y administrativo para pymes que necesitan control financiero confiable.
+            </p>
+            <a href="sage50.html" class="license-link" data-i18n="licenses.viewBrand">Ver productos Sage 50</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="contacto" class="card" style="margin-top:20px">
-      <h2>Contacto</h2>
-      <p class="lead">Contáctanos para cotizar licencias o equipos tecnológicos.</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/50764717883" target="_blank">+507 6471-7883</a><br>
-         <strong>Correo:</strong> <a href="mailto:contacto@licensespty.com">contacto@licensespty.com</a></p>
+    <section id="catalogo" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2 data-i18n="catalog.title">Catálogo de licencias</h2>
+          <p data-i18n="catalog.subtitle">
+            Los precios se consultan dinámicamente desde nuestro sistema interno. Si un producto aparece con "Precio a consultar", contáctanos para una cotización personalizada.
+          </p>
+        </header>
+
+        <div class="catalog-controls">
+          <div class="filter-group">
+            <span class="filter-label" data-i18n="catalog.filterBrand">Marca:</span>
+            <select id="brandFilter">
+              <option value="all" data-i18n="catalog.brandAll">Todas</option>
+              <option value="Kaspersky">Kaspersky</option>
+              <option value="McAfee">McAfee</option>
+              <option value="ESET">ESET</option>
+              <option value="Microsoft 365">Microsoft 365</option>
+              <option value="Windows">Windows</option>
+              <option value="Sage 50">Sage 50</option>
+              <option value="Otros" data-i18n="catalog.brandOthers">Otros</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label" data-i18n="catalog.filterSearch">Buscar:</span>
+            <input type="search" id="searchInput" placeholder="SKU / nombre..." />
+          </div>
+          <div class="catalog-status" id="catalogStatus">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+            <span data-i18n="catalog.loading">Cargando precios...</span>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="catalog-table">
+            <thead>
+              <tr>
+                <th data-i18n="catalog.thSku">SKU</th>
+                <th data-i18n="catalog.thProduct">Producto</th>
+                <th data-i18n="catalog.thDevices">Equipos</th>
+                <th data-i18n="catalog.thYears">Plan (años)</th>
+                <th data-i18n="catalog.thPrice">Precio (USD)</th>
+              </tr>
+            </thead>
+            <tbody id="catalogBody"></tbody>
+          </table>
+        </div>
+
+        <p class="catalog-note" data-i18n="catalog.note">
+          Algunos productos pueden no estar disponibles en todo momento. Los precios finales se confirman en la cotización.
+        </p>
+      </div>
     </section>
 
-    <footer>
-      © <span id="y"></span> LicensesPTY — Soluciones en software y tecnología.
-    </footer>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
+    <section id="equipos" class="section">
+      <div class="container equip-grid">
+        <div>
+          <h2 data-i18n="equip.title">Equipos informáticos y hardware</h2>
+          <p data-i18n="equip.text">
+            Además de licencias de software, podemos suministrar equipos informáticos para proyectos nuevos o ampliaciones. Trabajamos bajo pedido, ajustando las configuraciones a las necesidades de cada cliente.
+          </p>
+          <ul class="equip-list">
+            <li data-i18n="equip.item1">Computadoras de escritorio para oficina.</li>
+            <li data-i18n="equip.item2">Laptops empresariales y para teletrabajo.</li>
+            <li data-i18n="equip.item3">Equipos para punto de venta.</li>
+            <li data-i18n="equip.item4">Monitores y periféricos.</li>
+            <li data-i18n="equip.item5">Impresoras y multifuncionales.</li>
+            <li data-i18n="equip.item6">Equipos de red (routers, switches, Wi-Fi).</li>
+          </ul>
+        </div>
+        <div class="equip-card">
+          <div class="equip-card-inner">
+            <h3 data-i18n="equip.ctaTitle">¿Buscas equipos específicos?</h3>
+            <p data-i18n="equip.ctaText">
+              Cuéntanos qué tipo de equipo necesitas (cantidad, uso, presupuesto) y te enviaremos opciones de configuración pensadas para tu caso.
+            </p>
+            <a href="https://wa.me/50768886778?text=Hola%20LicensesPTY,%20quisiera%20cotizar%20equipos%20inform%C3%A1ticos." target="_blank" rel="noopener" class="btn primary">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-i18n="equip.ctaButton">Escribir por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2 data-i18n="faq.title">Preguntas frecuentes</h2>
+          <p data-i18n="faq.subtitle">
+            Respondemos algunas preguntas comunes sobre nuestras licencias y forma de trabajo.
+          </p>
+        </header>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 data-i18n="contact.title">¿Necesitas una cotización o asesoría?</h2>
+          <p data-i18n="contact.text">
+            Envíanos un mensaje con el software o equipo que necesitas y con gusto te responderemos con opciones y precios actualizados para Panamá.
+          </p>
+          <div class="contact-details">
+            <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/50768886778" target="_blank" rel="noopener">+507 6888-6778</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a href="mailto:soporte@solutechpanama.com">soporte@solutechpanama.com</a></p>
+            <p><i class="fa-solid fa-location-dot"></i> <strong data-i18n="contact.locationLabel">Operado por:</strong> <span data-i18n="contact.locationValue">SOLUTECH PANAMA, PH Central Park, Ciudad de Panamá, Panamá.</span></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-inner">
+            <h3 data-i18n="contact.formTitle">Formulario de contacto</h3>
+            <form id="contactForm" class="contact-form" method="POST" action="https://formspree.io/f/XXXXX">
+              <input type="hidden" name="_subject" value="Nueva solicitud desde LicensesPTY" />
+              <div class="form-row">
+                <label for="name" data-i18n="contact.formName">Nombre completo</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-row">
+                <label for="email" data-i18n="contact.formEmail">Correo electrónico</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-row">
+                <label for="company" data-i18n="contact.formCompany">Empresa (opcional)</label>
+                <input type="text" id="company" name="company" />
+              </div>
+              <div class="form-row">
+                <label for="phone" data-i18n="contact.formPhone">Teléfono / WhatsApp (opcional)</label>
+                <input type="text" id="phone" name="phone" />
+              </div>
+              <div class="form-row">
+                <label for="product" data-i18n="contact.formProduct">Tipo de producto</label>
+                <select id="product" name="product">
+                  <option value="Kaspersky">Kaspersky</option>
+                  <option value="McAfee">McAfee</option>
+                  <option value="ESET">ESET</option>
+                  <option value="Microsoft 365">Microsoft 365</option>
+                  <option value="Windows">Windows</option>
+                  <option value="Sage 50">Sage 50</option>
+                  <option value="Otros">Otros / Equipos</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="message" data-i18n="contact.formMessage">Mensaje</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div class="form-row">
+                <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY"></div>
+              </div>
+              <button type="submit" class="btn primary form-submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span data-i18n="contact.formSubmit">Enviar formulario</span>
+              </button>
+              <p class="form-note" data-i18n="contact.formNote">
+                Este formulario está protegido con Cloudflare Turnstile. Usaremos tu información únicamente para responder tu solicitud.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container legal-grid">
+        <div>
+          <h3 data-i18n="legal.title">Aviso importante</h3>
+          <p data-i18n="legal.text">
+            LicensesPTY no solicita códigos de verificación, contraseñas de correo ni datos bancarios por WhatsApp o formularios externos. Si recibes un mensaje sospechoso, valida siempre los canales oficiales publicados en esta página.
+          </p>
+        </div>
+        <div>
+          <h3 data-i18n="legal.privacyTitle">Privacidad y datos</h3>
+          <p data-i18n="legal.privacyText">
+            Solo utilizamos tu información para elaborar cotizaciones, facturación y soporte técnico relacionado con los servicios contratados. No vendemos ni compartimos tus datos con terceros para campañas masivas de spam.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">LicensesPTY</span>
+        <p data-i18n="footer.text">
+          LicensesPTY es una marca operada por SOLUTECH PANAMA. Licencias de software ESD y equipos informáticos para Panamá.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.solutechpanama.com" target="_blank" rel="noopener">
+          <i class="fa-solid fa-globe"></i> solutechpanama.com
+        </a>
+        <div class="footer-social">
+          <a href="https://wa.me/50768886778" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>© <span id="year"></span> LicensesPTY / SOLUTECH PANAMA. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/50768886778" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp LicensesPTY">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="js/main.js" defer></script>
+  </body>
 </html>
