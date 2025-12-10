@@ -93,96 +93,181 @@
   </header>
 
   <main>
-    <section class="hero section">
+    <!-- HERO McAfee -->
+    <section class="hero section mcafee-hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="hero-kicker">McAfee</p>
-          <h1>McAfee - Licencias originales en Panamá</h1>
-          <p>Licencias digitales ESD de McAfee, distribuidas por LicensesPTY con soporte y facturación local en Panamá.</p>
+          <p class="hero-kicker">
+            Licencias McAfee con soporte local en Panamá
+          </p>
+          <h1>
+            Protección McAfee para tu hogar y pequeñas empresas
+          </h1>
+          <p class="hero-subtitle">
+            Ofrecemos licencias originales McAfee en formato digital (ESD),
+            con facturación emitida por SOLUTECH PANAMA y soporte técnico en
+            español para activación e instalación básica.
+          </p>
           <div class="hero-actions">
-            <a href="#catalogo" class="btn primary">Ver catálogo McAfee</a>
-            <a href="https://wa.me/50768886778?text=Hola%20LicensesPTY,%20quisiera%20cotizar%20McAfee" target="_blank" rel="noopener" class="btn ghost">
+            <a href="#mcafee-planes" class="btn primary">
+              Ver planes McAfee
+            </a>
+            <a
+              href="https://wa.me/50768886778?text=Hola%2C%20vengo%20de%20LicensesPTY%20y%20quiero%20información%20de%20las%20licencias%20McAfee."
+              target="_blank"
+              rel="noopener"
+              class="btn ghost"
+            >
               <i class="fa-brands fa-whatsapp"></i>
               Cotizar por WhatsApp
             </a>
           </div>
+          <div class="hero-badges">
+            <span><i class="fa-solid fa-key"></i> Licencias ESD originales</span>
+            <span><i class="fa-solid fa-file-invoice"></i> Facturación local en Panamá</span>
+            <span><i class="fa-solid fa-headset"></i> Soporte técnico en español</span>
+          </div>
         </div>
+
         <div class="hero-card">
           <div class="hero-card-inner">
-            <h2>Operado por SOLUTECH PANAMA</h2>
-            <p>Esta página muestra una selección de licencias McAfee administradas por LicensesPTY. Para otras variantes o licenciamiento por volumen, contáctanos directamente.</p>
+            <h2>Transparencia y seguridad primero</h2>
+            <p>
+              Esta página muestra solo la información comercial de las licencias
+              McAfee que vendemos. No pedimos contraseñas, códigos de verificación
+              ni datos bancarios aquí.
+            </p>
+            <ul class="trust-list">
+              <li>Licencias originales adquiridas por canales autorizados.</li>
+              <li>Entrega digital rápida tras la confirmación de pago.</li>
+              <li>Factura fiscal emitida por SOLUTECH PANAMA.</li>
+              <li>Soporte por WhatsApp, correo y acceso remoto (cuando se autorice).</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="catalogo" class="section section-alt">
+    <!-- PRODUCTOS McAfee -->
+    <section id="mcafee-planes" class="section mcafee-products-section">
       <div class="container">
         <header class="section-header">
-          <h2>Catálogo McAfee</h2>
-          <p>Los precios se cargan dinámicamente desde nuestro sistema interno de LicensesPTY.</p>
+          <h2>Licencias McAfee que ofrecemos</h2>
+          <p>
+            Elige el plan que mejor se adapta a la cantidad de equipos que quieres
+            proteger. Los precios se cargan automáticamente desde nuestro sistema
+            interno.
+          </p>
         </header>
 
-        <div class="catalog-controls">
-          <div class="filter-group">
-            <span class="filter-label">Marca:</span>
-            <select id="brandFilter">
-              <option value="McAfee">McAfee</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <span class="filter-label">Buscar:</span>
-            <input type="search" id="searchInput" placeholder="SKU / nombre..." />
-          </div>
-          <div class="catalog-status" id="catalogStatus">
-            <i class="fa-solid fa-circle-notch fa-spin"></i>
-            <span>Cargando precios...</span>
-          </div>
+        <div class="licenses-grid mcafee-products-grid">
+          <!-- McAfee Antivirus 1 PC -->
+          <article
+            class="license-card mcafee-product-card"
+            data-sku="SE00MMCA02"
+          >
+            <header class="license-header">
+              <span class="license-brand">McAfee</span>
+              <span class="license-badge">Hogar</span>
+            </header>
+
+            <h3 class="license-title">
+              McAfee Antivirus – 1&nbsp;PC / 1&nbsp;año
+            </h3>
+
+            <p class="license-type">
+              Protección esencial para un solo equipo (PC o laptop) con
+              antivirus en tiempo real, protección web básica y soporte local
+              para instalación y activación.
+            </p>
+
+            <p class="license-duration">
+              1 dispositivo · 1 año de servicio
+            </p>
+
+            <p class="license-price">
+              <strong class="license-price-value">—</strong>
+              <span class="license-price-currency">USD</span>
+              <span class="license-price-note"></span>
+            </p>
+
+            <p class="license-footnote">
+              El precio puede variar según promociones y tipo de cambio. ITBMS se
+              aplica al facturar en Panamá.
+            </p>
+
+            <div class="license-actions">
+              <a
+                href="#"
+                class="btn primary license-cta"
+                data-role="waBtn"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+                Pedir por WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- McAfee Total Protection 10 PC -->
+          <article
+            class="license-card mcafee-product-card"
+            data-sku="SE00MMCA01"
+          >
+            <header class="license-header">
+              <span class="license-brand">McAfee</span>
+              <span class="license-badge">Familia / oficinas pequeñas</span>
+            </header>
+
+            <h3 class="license-title">
+              McAfee Total Protection – 10&nbsp;PC / 1&nbsp;año
+            </h3>
+
+            <p class="license-type">
+              Suite completa para proteger hasta 10 equipos con antivirus,
+              navegación segura y funciones adicionales de seguridad. Ideal
+              para familias o pequeñas oficinas que necesitan cubrir varios
+              dispositivos.
+            </p>
+
+            <p class="license-duration">
+              Hasta 10 dispositivos · 1 año de servicio
+            </p>
+
+            <p class="license-price">
+              <strong class="license-price-value">—</strong>
+              <span class="license-price-currency">USD</span>
+              <span class="license-price-note"></span>
+            </p>
+
+            <p class="license-footnote">
+              El precio se actualiza automáticamente desde la hoja de cálculo.
+              ITBMS se aplica al facturar en Panamá.
+            </p>
+
+            <div class="license-actions">
+              <a
+                href="#"
+                class="btn primary license-cta"
+                data-role="waBtn"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+                Pedir por WhatsApp
+              </a>
+            </div>
+          </article>
         </div>
 
-        <div class="table-wrapper">
-          <table class="catalog-table">
-            <thead>
-              <tr>
-                <th>SKU</th>
-                <th>Producto</th>
-                <th>Equipos</th>
-                <th>Plan (años)</th>
-                <th>Precio (USD)</th>
-              </tr>
-            </thead>
-            <tbody id="catalogBody"></tbody>
-          </table>
-        </div>
-
-        <p class="catalog-note">
-          Si necesitas una edición o cantidad específica que no veas publicada, puedes escribirnos para revisar existencias y disponibilidad.
+        <p class="mcafee-extra-note">
+          Si necesitas otras ediciones o más dispositivos, escríbenos y te
+          cotizamos opciones adicionales de McAfee o de otras marcas.
         </p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo">LicensesPTY</span>
-        <p data-i18n="footer.text">
-          LicensesPTY es una marca operada por SOLUTECH PANAMA. Licencias de software ESD y equipos informáticos para Panamá.
-        </p>
-      </div>
-      <div class="footer-links">
-        <a href="https://www.solutechpanama.com" target="_blank" rel="noopener">
-          <i class="fa-solid fa-globe"></i> solutechpanama.com
-        </a>
-        <div class="footer-social">
-          <a href="https://wa.me/50768886778" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-      </div>
-      <div class="footer-copy">
-        <p>© <span id="year"></span> LicensesPTY / SOLUTECH PANAMA. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
-      </div>
-    </div>
-  </footer>
+
+  <div id="site-footer"></div>
+
 
   <a href="https://wa.me/50768886778" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp LicensesPTY">
     <i class="fa-brands fa-whatsapp"></i>
@@ -190,5 +275,82 @@
 
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script src="js/main.js" defer></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".mcafee-product-card[data-sku]");
+      if (!cards.length) return;
+
+      // Usamos API_URL que ya viene definido en main.js
+      const api = API_URL;
+
+      const lang = localStorage.getItem("licensespty_lang") || "es";
+      const TEXTS = {
+        es: {
+          plusTax: "+ ITBMS si aplica",
+          consult: "Precio a consultar",
+          waPrefix:
+            "Hola, vengo de LicensesPTY y me interesa la licencia ",
+          waSuffix: " de McAfee (SKU "
+        },
+        en: {
+          plusTax: "+ VAT if applicable",
+          consult: "Price on request",
+          waPrefix:
+            "Hi, I found this McAfee license on LicensesPTY and I am interested in ",
+          waSuffix: " (SKU "
+        }
+      };
+      const t = TEXTS[lang] || TEXTS.es;
+
+      fetch(api + "?brand=McAfee")
+        .then((res) => res.json())
+        .then((items) => {
+          const bySku = {};
+          items.forEach((p) => {
+            if (p && p.sku) bySku[p.sku.toString().trim()] = p;
+          });
+
+          cards.forEach((card) => {
+            const sku = card.dataset.sku;
+            const product = bySku[sku];
+
+            const priceEl = card.querySelector(".license-price-value");
+            const noteEl = card.querySelector(".license-price-note");
+            const waBtn = card.querySelector('[data-role="waBtn"]');
+
+            if (!priceEl || !product) return;
+
+            const priceNumber = Number(product.price || 0);
+            const visible =
+              product.priceVisible !== undefined
+                ? !!product.priceVisible
+                : priceNumber > 0;
+
+            if (visible && priceNumber > 0) {
+              priceEl.textContent = "USD " + priceNumber.toFixed(2);
+              if (noteEl) noteEl.textContent = " " + t.plusTax;
+            } else {
+              priceEl.textContent = t.consult;
+              if (noteEl) noteEl.textContent = "";
+            }
+
+            if (waBtn) {
+              const name = (product.product || "").toString();
+              const msg =
+                t.waPrefix + name + t.waSuffix + sku + ").";
+              waBtn.href =
+                "https://wa.me/50768886778?text=" +
+                encodeURIComponent(msg);
+            }
+          });
+        })
+        .catch((err) => {
+          console.error("Error cargando precios de McAfee", err);
+        });
+    });
+  </script>
+
+
   </body>
 </html>

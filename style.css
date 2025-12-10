@@ -942,3 +942,72 @@ html, body {
   width: auto;
   object-fit: contain;
 }
+
+.catalog-table-wrapper {
+  max-height: 480px;          /* altura máx. en escritorio */
+  overflow-y: auto;           /* scroll interno */
+  border-radius: 18px;
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.18);
+  background: var(--surface-elevated, #e6ebfa);
+}
+
+/* Opcional: hacer el encabezado de la tabla “pegado” arriba */
+.catalog-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* En pantallas pequeñas bajamos un poco la altura */
+@media (max-width: 768px) {
+  .catalog-table-wrapper {
+    max-height: 360px;
+  }
+}
+
+.mcafee-hero {
+  padding-top: 4.5rem;
+}
+
+.mcafee-products-section {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.mcafee-products-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 980px;
+  margin: 1.5rem auto 0;
+}
+
+.mcafee-product-card {
+  flex: 1 1 0;
+}
+
+@media (min-width: 900px) {
+  .mcafee-products-grid {
+    flex-direction: row;
+  }
+}
+
+.mcafee-product-card .license-price {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.mcafee-product-card .license-price-value {
+  font-size: 1.15rem;
+}
+
+.mcafee-product-card .license-footnote {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.mcafee-extra-note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
