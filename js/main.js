@@ -94,13 +94,14 @@ function detectBrandFromName(name) {
 
 function normalizeItem(raw) {
   const item = {
-    sku: raw.SKU || raw.sku || "",
-    product: raw.Producto || raw.producto || raw.Product || "",
-    devices: raw.Equipos || raw.devices || raw.Dispositivos || "",
-    years: raw["Plan (años)"] || raw.Plan || raw.years || "",
-    price: raw.PrecioUSD ?? raw.price ?? raw.Precio ?? 0,
+    sku: raw.sku || raw.SKU || "",
+    product: raw.product || raw.Product || raw.Producto || "",
+    devices: raw.devices || raw.Equipos || "",
+    years: raw.years || raw["Plan (años)"] || "",
+    price: raw.price || raw.PrecioUSD || 0,
   };
-  let brand = raw.Marca || raw.Brand || raw.Vendor || "";
+
+  let brand = raw.brand || raw.Marca || raw.Brand || raw.Vendor || "";
   if (!brand) {
     brand = detectBrandFromName(item.product);
   }
